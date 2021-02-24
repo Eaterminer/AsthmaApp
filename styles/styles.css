@@ -1,0 +1,152 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: white;
+	color: black;
+	font-size: 18px;
+	font-family: 'varela round', arial, sans-serif;
+	justify-content: center;
+	overflow-x: hidden;
+}
+
+.support {
+	background: white;
+	border: 2px solid #4c8bf5;
+	position: fixed;
+	bottom: 1px;
+	left: 1px;
+	transition: background 0.5s;
+	margin: 20px;
+	outline: none;
+	font-size: 18px;
+	color: #4c8bf5;
+	padding: 6px;
+	border-radius: 60px;
+}
+
+.copy {
+	background: white;
+	border: 2px solid #4c8bf5;
+	position: fixed;
+	bottom: 1px;
+	right: 1px;
+	transition: background 0.5s;
+	margin: 20px;
+	outline: none;
+	font-size: 18px;
+	color: #4c8bf5;
+	padding: 6px;
+	border-radius: 60px;
+}
+
+.support > .text {
+	margin-left: 5px;
+}
+
+.support:hover {
+	background: #DCDCDC;
+	transition: background 0.3s;
+}
+
+.header {
+	width: 100vw;
+	padding: 1px;
+	text-align: center;
+	position: sticky;
+	top: 0px;
+	color: white;
+	left: 0px;
+	background-color: #d93125;
+}
+
+.actionsContainer {
+	width: 100vw;
+}
+
+.container {
+    text-align: center;
+}
+
+.maxDisplay {
+    z-index: 999;
+}
+
+.top {
+    position: sticky;
+    top: 1px;
+}
+
+.actions {
+ 	background-color: #2979ff;
+	padding: 10px;
+	height: 6vh;
+	display: inline-flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.actions > .button {
+	background-color: transparent;
+	border-radius: 20px;
+	text-decoration: none;
+	width: 20%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 19px;
+	border: 1px solid white;
+	color: white;
+	transition: border-radius 0.3s
+}
+
+.actions > .button:hover {
+	border-radius: 5px;
+	transition: border-radius 0.5s;
+}
+
+.copyright {
+	position: absolute;
+	text-align: center;
+	bottom: 0px;
+	width: 100vw;
+	right: 0px;
+}
+
+.tabFrame {
+	box-shadow: 0 4px 8px 0 rgba(26, 115, 232, 0.2), 0 6px 20px 0 #def;
+	outline: none;
+	height: calc(100vh - 6vh);
+	width: 95vw;
+	border: 2px solid rgb(26, 115, 232);
+	margin: 10px;
+	margin-bottom: 20px; 
+}
+
+
+
+@media only screen and (max-width: 840px) {
+  body {
+    font-size: 20px;
+  }
+	.actions > .button {
+		border-radius: 22px;
+		width: 25%;
+		padding: 7px;
+		border-width: 2px;
+		font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 24px;
+  }
+	.actions > .button {
+		border-radius: 24px;
+		width: 25%;
+		padding: 10px;
+		border-width: 3px;
+		font-size: 22px;
+  }
+}

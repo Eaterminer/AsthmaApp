@@ -1,0 +1,100 @@
+<!doctype HTML>
+<html lang="en" class="loaded">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PT32ZD9');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!--PWA Suport-->
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Medi Game">
+    <meta name="apple-mobile-web-app-title" content="Medi Game">
+    <meta name="theme-color" content="#de5246">
+    <meta name="msapplication-navbutton-color" content="#de5246">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/Medi-Game/">
+    <!--Pwa Support Stoped-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/svg" sizes="512x512" href="images/medicine_icon.svg">
+    <link rel="apple-touch-icon" type="image/svg" sizes="512x512" href="Medi-Game/images/medicine_icon.svg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link defer href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script defer src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+    <script src="scripts/functions.js"></script>
+    <link defer rel="stylesheet" href="styles/normalize.css">
+    <link defer rel="stylesheet" href="styles/styles.css">
+    <title>Asthma App</title>
+    <meta name="description" content="This is a Game, When you Take Medicine It Gives You Moves">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="scripts/scripts.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+</head>
+
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PT32ZD9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- OLD CONTENT
+    <div class="header">
+        <h1>Medi-Game</h1>
+        <h2>Take Your Medicine!</h2>
+    </div>
+
+    <div class="actionsContainer">
+        <div id="actions" class="actions">
+            <button id="button navButton" class="button" onclick="switchTab('button')">The Button</button>
+            <button id="button navButton" class="button" onclick="switchTab('bal')">Credits</button>
+            <button id="button navButton" class="button" onclick="switchTab('help')">Support</button>
+        </div>
+    </div>
+    -->
+    <nav class="navbar-inverse top maxDisplay">
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Asthma App</a>
+        </div>
+        <div class="collapse myNavbar navbar-collapse">
+
+            <ul class="nav navbar-nav">
+                <li><a href="#yebuttona">The Button</a></li>
+                <li><a href="#contact">support</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <iframe id="tabFrame yebuttona" class="tabFrame" src="actions/yeButtona.html" title="tabFrame">
+            Iframe Not Loaded... Please Wait 5 Seconds... If Not Loaded Then Click <a hred="pages/help/iframeNotLoaded.html">Here</a>
+        </iframe>
+    </div>
+</body></html>
