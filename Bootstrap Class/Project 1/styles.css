@@ -1,0 +1,66 @@
+.top {
+    position: sticky;
+    top: 0px;
+}
+
+.maxDisplay {
+    z-index: 999;
+}
+
+.section-custom {
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 75px;
+}
+
+.section-custom > .title-image {
+    width: 75%;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.section-custom > marquee {
+    width: 75%;
+    margin: 15px;
+    margin-bottom: 8px;
+    font-size: 32px;
+}
+
+.section-custom > iframe {
+    width: 90%;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.flexypotato {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexymuffin {
+    border: 1px solid slategrey;
+    padding: 5px;
+    width: 40%;
+}
+
+
+
+
+.achivements_head
+{
+    font-size: 20px;
+    padding: 6px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: inline-block;
+}
+
+#footer {
+    background: black;
+    color: white;
+    height: 20px;
+    width: 100vw;
+}
+
