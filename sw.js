@@ -7,7 +7,6 @@ self.addEventListener('install', e => {
     caches.open(cacheName).then(cache => {
       return cache.addAll([
         `/AsthmaApp/`,
-        `/AsthmaApp/index.html`,
         `/AsthmaApp/styles.css`,
         `/AsthmaApp/scripts.js`,
         `/AsthmaApp/settings.html`,
@@ -17,8 +16,7 @@ self.addEventListener('install', e => {
         '/AsthmaApp/images/inhaler.png',
         '/AsthmaApp/images/favicon.png',
         '/AsthmaApp/reward/game/index.html',
-        '/AsthmaApp/reward/game/script.js',
-        '/AsthmaApp/reward/game/style.css'
+        '/AsthmaApp/reward/game/script.js'
       ])
         .then(() => self.skipWaiting());
     })
