@@ -1,99 +1,85 @@
-<!doctype HTML>
-<html lang="en" class="loaded">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PT32ZD9');
-    </script>
-    <!-- End Google Tag Manager -->
-    <!--PWA Support-->
-    <link rel="manifest" href="manifest.json">
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://eaterminer.github.io/E-lib/latest/main.js"> </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Asthma App">
-    <meta name="apple-mobile-web-app-title" content="Asthma App">
-    <meta name="theme-color" content="#de5246">
-    <meta name="msapplication-navbutton-color" content="#de5246">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="msapplication-starturl" content="/AsthmaApp/">
-    <!--Pwa Support Stoped-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/svg" sizes="512x512" href="images/inhaler.svg">
-    <link rel="apple-touch-icon" type="image/svg" sizes="512x512" href="images/asthma_icon.svg">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link defer href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <script src="scripts/functions.js"></script>
-    <link defer rel="stylesheet" href="styles/normalize.css">
-    <link defer rel="stylesheet" href="styles/styles.css">
-    <title>Asthma App</title>
-    <meta name="description" content="This is an App, When you Take Your Inhaler It Gives You a Picture">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script defer src="scripts/scripts.js"></script>
+  <title>Asthma App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Asthma App v3">
+  <script src="https://www.w3schools.com/lib/w3.js" SameSite="lax" async></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" SameSite="lax" defer>
+  <link rel="stylesheet" href="styles.css" defer>
+  <link rel="manifest" href="manifest.webmanifest" async>
+  <script src="functions.js" defer></script>
+  <script src="scripts.js" defer></script>
+  <meta name="theme-color" content="#009688">
+  <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
 </head>
 
-
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PT32ZD9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- OLD CONTENT
-    <div class="header">
-        <h1>Medi-Game</h1>
-        <h2>Take Your Medicine!</h2>
-    </div>
 
-    <div class="actionsContainer">
-        <div id="actions" class="actions">
-            <button id="button navButton" class="button" onclick="switchTab('button')">The Button</button>
-            <button id="button navButton" class="button" onclick="switchTab('bal')">Credits</button>
-            <button id="button navButton" class="button" onclick="switchTab('help')">Support</button>
-        </div>
-    </div>
-    -->
-    <nav class="navbar-inverse top maxDisplay">
-        <div class="navbar-header">
-            <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Asthma App</a>
-        </div>
-        <div class="collapse myNavbar navbar-collapse">
+  <header class="w3-container w3-teal">
+    <h1>Asthma App</h1>
+  </header>
 
-            <ul class="nav navbar-nav">
-                <li><a href="#yebuttona">The Button</a></li>
-                <li><a href="#support">Support</a></li>
-            </ul>
-        </div>
-    </nav>
+  <div class="w3-container w3-bar w3-green">
+    <h4 class="w3-bar-item">Had your Inhaler?</h4>
+    <button class="w3-bar-item w3-margin raised w3-button w3-deep-purple rounded"
+      onclick="w3.show('#theButton')">Yes</button>
+  </div>
+  <div class="w3-container w3-bar w3-green">
+    <h4 class="w3-bar-item">Got PlayTime?</h4>
+    <a class="w3-bar-item w3-margin raised w3-button w3-deep-purple rounded" href="reward/game/index.html">Play Now!</a>
+  </div>
+  <div class="w3-container w3-bar w3-green">
+    <h4 class="w3-bar-item">Parent?</h4>
+    <a class="w3-bar-item w3-margin raised w3-button w3-deep-purple rounded" href="settings.html">Options</a>
+  </div>
 
-    <div class="container">
-        <iframe id="yebuttona" class="tabFrame" src="actions/yeButtona.html" title="tabFrame">
-            Iframe Not Loaded... Please Wait 5 Seconds... If Not Loaded Then Click <a hred="pages/help/iframeNotLoaded.html">Here</a>
-        </iframe>
-        <hr class="newNavSection">
-        <iframe class="supportSection" id="support" src="https://console.dialogflow.com/api-client/demo/embedded/8d7ae109-f4bf-4519-9697-e52d8775efae">Unable To Access Support, Try <a href="https://console.dialogflow.com/api-client/demo/embedded/8d7ae109-f4bf-4519-9697-e52d8775efae">Here</a>
+
+  <footer class="bottom w3-container w3-teal">
+    <button class="w3-button w3-red" onclick="w3.show('#copyright')">Copyright</button>
+  </footer>
+
+  <div id="copyright" class="w3-animate-opacity w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal">
+        <span onclick="w3.hide('#copyright')" class="w3-button w3-display-topright">&times;</span>
+        <h2>Copyright</h2>
+      </header>
+      <div class="w3-container">
+        <p>Developer: Peter Heeren</p>
+        <p>Images: Classroomclipart</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Made For Amanda Williams | CanBreathe Educater</p>
+      </footer>
+      <footer class="w3-container w3-red">
+        <p>This Content Is Protected Via Copyright Laws.</p>
+      </footer>
     </div>
-</body></html>
+  </div>
+
+  <div id="theButton" class="w3-animate-opacity w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal">
+        <span onclick="w3.hide('#theButton')" class="w3-button w3-display-topright">&times;</span>
+        <h2>The Button of Inhalers</h2>
+      </header>
+      <div class="w3-container ahs">
+        <img class="button-img center" id="inhalerImg" src="images/inhaler.png" alt="Click Me!"
+          onclick="inhalerPressed()">
+        <img class="button-img center hidden" id="randomImage">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var imgAr = ["animation1.gif", "animation2.gif", "animation3.gif", "animation4.gif", "animation5.gif", "animation6.jpg", "animation7.gif", "animation8.gif", "animation9.gif", "animation10.gif", "animation11.gif", "animation12.gif", "animation13.gif"]
+    var imgPath = "images/"
+    var num = Math.floor(Math.random() * imgAr.length);
+    var img = imgAr[num];
+    document.getElementById("randomImage").src = imgPath + img;
+  </script>
+</body>
+
+</html>
