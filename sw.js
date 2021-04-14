@@ -6,34 +6,19 @@ self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(cache => {
       return cache.addAll([
-        `/`,
-        `/index.html`,
-        `/styles.css`,
-        `/scripts.js`,
-        `/settings.html`,
-        `/functions.js`,
-        `/third-party/original/w3.js`,
-        `/third-party/original/w3.css`,
-        `/review.html`,
-        `/tour.html`,
-        '/images/animation1.gif',
-        '/images/animation2.gif',
-        '/images/animation3.gif',
-        '/images/animation4.gif',
-        '/images/animation5.gif',
-        '/images/animation6.jpg',
-        '/images/animation7.gif',
-        '/images/animation8.gif',
-        '/images/animation9.gif',
-        '/images/animation10.gif',
-        '/images/animation11.gif',
-        '/images/animation12.gif',
-        '/images/animation13.gif',
-        '/images/inhaler.png',
-        '/images/favicon.png',
-        '/reward/game/index.html',
-        '/reward/game/script.js',
-        '/reward/game/style.css'
+        `/AsthmaApp/`,
+        `/AsthmaApp/index.html`,
+        `/AsthmaApp/styles.css`,
+        `/AsthmaApp/scripts.js`,
+        `/AsthmaApp/settings.html`,
+        `/AsthmaApp/functions.js`,
+        `/AsthmaApp/review.html`,
+        `/AsthmaApp/tour.html`,
+        '/AsthmaApp/images/inhaler.png',
+        '/AsthmaApp/images/favicon.png',
+        '/AsthmaApp/reward/game/index.html',
+        '/AsthmaApp/reward/game/script.js',
+        '/AsthmaApp/reward/game/style.css'
       ])
         .then(() => self.skipWaiting());
     })
