@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Asthma App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Asthma App v3">
+  <script src="https://www.w3schools.com/lib/w3.js" SameSite="lax" async></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" SameSite="lax" defer>
+  <link rel="stylesheet" href="styles.css" defer>
+  <link rel="manifest" href="manifest.webmanifest" async>
+  <script src="functions.js" defer></script>
+  <script src="scripts.js" defer></script>
+  <meta name="theme-color" content="#009688">
+  <link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+</head>
+
+<body>
+
+  <header class="w3-container w3-teal">
+    <h1>Asthma App</h1>
+  </header>
+
+  <div class="w3-container w3-bar w3-green">
+    <h4 class="w3-bar-item">Had your Inhaler?</h4>
+    <button class="w3-bar-item w3-margin raised w3-button w3-deep-purple rounded"
+      onclick="w3.show('#theButton')">Yes</button>
+  </div>
+  <div class="w3-container w3-bar w3-green">
+    <h4 class="w3-bar-item">Got PlayTime?</h4>
+    <a class="w3-bar-item w3-margin raised w3-button w3-deep-purple rounded" href="reward/game/index.html">Play Now!</a>
+  </div>
+  <div class="w3-container w3-bar w3-green">
+    <h4 class="w3-bar-item">Parent?</h4>
+    <a class="w3-bar-item w3-margin raised w3-button w3-deep-purple rounded" href="settings.html">Options</a>
+  </div>
+
+
+  <footer class="bottom w3-container w3-teal">
+    <button class="w3-button w3-red" onclick="w3.show('#copyright')">Copyright</button>
+  </footer>
+
+  <div id="copyright" class="w3-animate-opacity w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal">
+        <span onclick="w3.hide('#copyright')" class="w3-button w3-display-topright">&times;</span>
+        <h2>Copyright</h2>
+      </header>
+      <div class="w3-container">
+        <p>Developer: Peter Heeren</p>
+        <p>Images: Classroomclipart</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Made For Amanda Williams | CanBreathe Educater</p>
+      </footer>
+      <footer class="w3-container w3-red">
+        <p>This Content Is Protected Via Copyright Laws.</p>
+      </footer>
+    </div>
+  </div>
+
+  <div id="theButton" class="w3-animate-opacity w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal">
+        <span onclick="w3.hide('#theButton')" class="w3-button w3-display-topright">&times;</span>
+        <h2>The Button of Inhalers</h2>
+      </header>
+      <div class="w3-container ahs">
+        <a class="w3-btn button-img" id="inhalerImg" href="javascript:inhalerPressed()"><img class="button-img center" id="inhalerImg" src="images/inhaler.png" alt="Click Me!"></a>
+        <img style="display: none;" class="button-img center" id="randomImage">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var imgAr = ["animation1.gif", "animation2.gif", "animation3.gif", "animation4.gif", "animation5.gif", "animation6.jpg", "animation7.gif", "animation8.gif", "animation9.gif", "animation10.gif", "animation11.gif", "animation12.gif", "animation13.gif"]
+    var imgPath = "images/"
+    var num = Math.floor(Math.random() * imgAr.length);
+    var img = imgAr[num];
+    document.getElementById("randomImage").src = imgPath + img;
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Asthma App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Asthma App v3">
+  <script src="https://www.w3schools.com/lib/w3.js" async></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" defer>
+  <link rel="stylesheet" href="../../styles.css" defer>
+  <link rel="manifest" href="manifest.webmanifest" async>
+  <script src="../../functions.js" defer></script>
+  <script src="../../scripts.js" defer></script>
+</head>
+
+<body>
+
+  <header class="w3-container w3-teal low-opacity">
+    <h1>Asthma App</h1>
+  </header>
+
+  <div class="w3-container w3-bar w3-green">
+    <h4 class="w3-bar-item low-opacity">Had your Inhaler?</h4>
+    <button class="w3-bar-item w3-margin raised w3-button w3-deep-purple rounded" onclick="w3.show('#theButton')">Yes</button>
+  </div>
+  <div class="w3-container w3-bar w3-green low-opacity">
+    <h4 class="w3-bar-item">Got PlayTime?</h4>
+    <a class="w3-bar-item w3-margin raised w3-button w3-deep-purple rounded" href="reward/game/index.html">Play Now!</a>
+  </div>
+  <div class="w3-container w3-bar w3-green low-opacity">
+    <h4 class="w3-bar-item">Parent?</h4>
+    <a class="w3-bar-item w3-margin raised w3-button w3-deep-purple rounded" href="settings.html">Options</a>
+  </div>
+
+
+  <footer class="bottom w3-container w3-teal low-opacity">
+    <button class="w3-button w3-red" onclick="w3.show('#copyright')">Copyright</button>
+  </footer>
+
+  <div id="copyright" class="w3-animate-opacity w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal">
+        <span onclick="w3.hide('#copyright')" class="w3-button w3-display-topright">&times;</span>
+        <h2>Copyright</h2>
+      </header>
+      <div class="w3-container">
+        <p>Developer: Peter Heeren</p>
+        <p>Images: Classroomclipart</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Made For Amanda Williams | CanBreathe Educater</p>
+      </footer>
+      <footer class="w3-container w3-red">
+        <p>This Content Is Protected Via Copyright Laws.</p>
+      </footer>
+    </div>
+  </div>
+
+  <div id="theButton" class="w3-animate-opacity w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal low-opacity">
+        <span onclick="w3.hide('#theButton')" class="w3-button w3-display-topright">&times;</span>
+        <h2>The Button of Inhalers</h2>
+      </header>
+      <div class="w3-container ahs">
+        <img class="button-img center" id="inhalerImg" src="../../images/inhaler.png" alt="Click Me!"
+          onclick="inhalerPressed()">
+        <h1 class="button-img center hidden" id="randomImage">Done!<br><a href="../../index.html" class="w3-amber w3-button">Go Back</a></h1>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
